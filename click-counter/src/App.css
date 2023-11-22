@@ -1,0 +1,33 @@
+:root {
+  background-color: lightpink;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  font-family: Lato, sans-serif;
+}
+
+.meow-logo-contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+.meow-logo {
+  height: 200px;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(180, 85, 85, 0.5);
+  border-radius: 10px;
+}
