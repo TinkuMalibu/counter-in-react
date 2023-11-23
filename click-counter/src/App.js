@@ -2,16 +2,20 @@
 import './App.css';
 import MeowCounterLogo from './imagenes/meow-counter.png';
 import Boton from './components/Boton';
+import Contador from './components/Contador';
+import { useState} from 'react';
 
 function App() {
 
+  const [numClics, setNumClics ] = useState(0);
+
   const clickBehavior = () => {
-    console.log('click');
-  }
+    setNumClics(numClics + 1);
+  };
 
   const reiniciarContador = () => {
-    console.log('reiniciar');
-  }
+    setNumClics(0);
+  };
 
   return (
     <div className='App'>
@@ -22,16 +26,15 @@ function App() {
         src= {MeowCounterLogo} />
       </div>
       <div className='contenedor-principal-contador'>
+        <Contador numClics={numClics} />
         <Boton
           texto='click'
           clickBoton={true}
-          clickManagement= {clickBehavior}
-        />
+          clickManagement= {clickBehavior} />
         <Boton
           texto='reset'
           clickBoton={false}
-          clickManagement={reiniciarContador}
-        />
+          clickManagement={reiniciarContador} />
       </div>
     </div>
   );
