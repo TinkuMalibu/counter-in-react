@@ -1,12 +1,10 @@
-:root {
-  background-color: lightpink;
-  font-size: 62.5%;
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: lightpink;
+
 }
 
 .App {
@@ -30,4 +28,5 @@
   height: 200px;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(180, 85, 85, 0.5);
   border-radius: 10px;
+
 }
