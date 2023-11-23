@@ -28,13 +28,15 @@ function App() {
       <div className='contenedor-principal-contador'>
         <Contador numClics={numClics} />
         <Boton
-          texto='click'
+          texto='Meow'
           clickBoton={true}
-          clickManagement= {clickBehavior} />
+          clickManagement= {clickBehavior}
+          buttonType= 'click' />
         <Boton
-          texto='reset'
+          texto='Please stop'
           clickBoton={false}
-          clickManagement={reiniciarContador} />
+          clickManagement={reiniciarContador}
+          buttonType='reset' />
       </div>
     </div>
   );
